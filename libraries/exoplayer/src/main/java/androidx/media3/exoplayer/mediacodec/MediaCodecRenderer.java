@@ -1532,7 +1532,7 @@ public abstract class MediaCodecRenderer extends BaseRenderer {
       String name,
       MediaCodecAdapter.Configuration configuration,
       long initializedTimestampMs,
-      long initializationDurationMs) {
+      long initializationDurationMs) throws ExoPlaybackException {
     // Do nothing.
   }
 

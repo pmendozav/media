@@ -1156,7 +1156,7 @@ public class MediaCodecVideoRenderer extends MediaCodecRenderer
       String name,
       MediaCodecAdapter.Configuration configuration,
       long initializedTimestampMs,
-      long initializationDurationMs) {
+      long initializationDurationMs) throws ExoPlaybackException {
     eventDispatcher.decoderInitialized(name, initializedTimestampMs, initializationDurationMs);
     codecNeedsSetOutputSurfaceWorkaround = codecNeedsSetOutputSurfaceWorkaround(name);
     codecHandlesHdr10PlusOutOfBandMetadata =
